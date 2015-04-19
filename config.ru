@@ -2,6 +2,6 @@ require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
 
-require './app'
+require_relative 'application'
 
 run Application
