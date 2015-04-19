@@ -16,4 +16,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery.terminal'
 end
 
-gem 'byebug'
+production do
+  gem 'puma'
+end
