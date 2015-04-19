@@ -16,6 +16,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery.terminal'
 end
 
-production do
+group :production do
   gem 'puma'
 end
