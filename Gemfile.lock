@@ -3,17 +3,16 @@ GEM
   remote: https://rails-assets.org/
   specs:
     backports (3.6.4)
-    byebug (4.0.5)
-      columnize (= 0.9.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    columnize (0.9.0)
     execjs (2.5.2)
     hike (1.2.3)
     json (1.8.2)
     multi_json (1.11.0)
+    puma (2.11.2)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
@@ -68,7 +67,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  byebug
+  puma
   rails-assets-bootstrap!
   rails-assets-jquery!
   rails-assets-jquery.terminal!
