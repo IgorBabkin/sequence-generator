@@ -1,4 +1,4 @@
-require 'sinatra/asset_pipeline/task'
-require './app'
+require_relative 'application'
 
-Sinatra::AssetPipeline::Task.define! App
+require 'sinatra/asset_pipeline/task'
+Sinatra::AssetPipeline::Task.define!(Application)
