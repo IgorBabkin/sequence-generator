@@ -18,7 +18,7 @@ class Application < Sinatra::Base
     slim :index
   end
 
-  get '/generate', layout: false do
+  get '/generate' do
     json generate_sequence(params[:size].to_i)
   end
 
