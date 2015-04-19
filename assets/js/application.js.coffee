@@ -1,3 +1,3 @@
 #= require jquery
 #= require bootstrap
-#= require_tree .
+#= require sequence_console

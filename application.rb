@@ -12,6 +12,8 @@ class Application < Sinatra::Base
         settings.sprockets.append_path(path)
       end
     end
+
+    AutoprefixerRails.install(settings.sprockets)
   end
 
   get '/' do

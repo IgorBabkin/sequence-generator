@@ -9,11 +9,11 @@ gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
 
 gem 'uglifier'
 gem 'slim'
+gem 'autoprefixer-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-bootstrap'
-  gem 'rails-assets-jquery.terminal'
 end
 
 group :production do

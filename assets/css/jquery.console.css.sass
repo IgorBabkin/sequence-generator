@@ -1,0 +1,48 @@
+$success-color: #63b132
+$success-error: #FD713B
+$cursor-color: #6C7B89
+$prompt-box-color: #000000
+$prompt-box-label-color: #3CBBC6
+
+.jquery-console
+  &-inner
+    height: 200px
+    margin: 10px 10px
+    overflow: auto
+    text-align: left
+
+  &-message
+    color: $prompt-box-color
+
+    &-value
+      color: $success-color
+
+  &-prompt
+    &-box
+      color: $prompt-box-color
+
+    &-label
+      color: $prompt-box-label-color
+
+  &-focus
+    .jquery-console-cursor
+      background: $cursor-color
+      color: #FFFFFF
+      animation: blink 1s step-end infinite
+
+  &-message-error
+    color: $success-error
+
+
+  &-message-success
+    color: $success-color
+
+
+  &-prompt-label
+    font-weight: bold
+
+@keyframes blink
+  from, to
+    background: transparent
+  50%
+    background: $cursor-color
