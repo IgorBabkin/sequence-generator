@@ -1,0 +1,16 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    title Sequence generator
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    == stylesheet_tag 'application'
+  body
+    .container
+      .header.clearfix
+        h3.text-muted Sequence generator
+
+      .jumbotron
+        == yield
+
+    == javascript_tag 'application'
